@@ -1,0 +1,7 @@
+
+.rows {
+  display: flex;
+  display: block;
+  justify-content: center;
+  border: 1px dotted black;
+}
