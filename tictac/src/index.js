@@ -17,9 +17,11 @@ class Board extends React.Component {
       xIsNext: true,
     }
   }
+
   reset() {
     this.setState({squares: Array(9).fill(null)});
   }
+
   handleClick(i) {
     //makes a copy of the array instead of modifying the original array
     const squares = this.state.squares.slice();
@@ -72,7 +74,7 @@ class Board extends React.Component {
             {this.renderSquare(7)}
             {this.renderSquare(8)}
           </div>
-          <button onClick={this.reset.bind(this)}>Reset</button>
+          <button className="reset" onClick={this.reset.bind(this)}>Reset</button>
         </div>
       </div>
     );
